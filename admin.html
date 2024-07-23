@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Административная панель - Гбанк</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Административная панель</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Выбор клиента</h2>
+            <form id="select-client-form">
+                <label for="client-select">Выберите клиента:</label>
+                <select id="client-select">
+                    <!-- Клиенты будут загружены сюда -->
+                </select>
+                <button type="submit">Выбрать клиента</button>
+            </form>
+        </section>
+
+        <section id="client-actions" style="display: none;">
+            <h2>Управление клиентом</h2>
+            <div>
+                <h3>Добавление услуги</h3>
+                <form id="add-service-form">
+                    <label for="service-name">Название услуги:</label>
+                    <input type="text" id="service-name" required>
+                    <button type="submit">Добавить услугу</button>
+                </form>
+            </div>
+
+            <div>
+                <h3>Удаление услуги</h3>
+                <form id="remove-service-form">
+                    <label for="remove-service-name">Выберите услугу для удаления:</label>
+                    <select id="remove-service-name">
+                        <!-- Услуги будут загружены сюда -->
+                    </select>
+                    <button type="submit">Удалить услугу</button>
+                </form>
+            </div>
+
+            <div>
+                <h3>Добавление принтера</h3>
+                <form id="add-printer-form">
+                    <label for="printer-type">Тип принтера:</label>
+                    <select id="printer-type">
+                        <option value="Обычный">Обычный</option>
+                        <option value="Базовый">Базовый</option>
+                        <option value="Премиум">Премиум</option>
+                        <option value="Продвинутый">Продвинутый</option>
+                    </select>
+                    <button type="submit">Добавить принтер</button>
+                </form>
+            </div>
+
+            <div>
+                <h3>Удаление принтера</h3>
+                <form id="remove-printer-form">
+                    <label for="remove-printer">Выберите принтер для удаления:</label>
+                    <select id="remove-printer">
+                        <!-- Принтеры будут загружены сюда -->
+                    </select>
+                    <button type="submit">Удалить принтер</button>
+                </form>
+            </div>
+
+            <div>
+                <h3>Снятие денег</h3>
+                <form id="withdraw-money-form">
+                    <label for="withdraw-amount">Сумма для снятия:</label>
+                    <input type="number" id="withdraw-amount" required>
+                    <button type="submit">Снять деньги</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Гбанк</p>
+        <p>Телефон: +7 (123) 456-78-90</p>
+        <p>Почта: support@gbank.ru</p>
+    </footer>
+    <script src="admin-script.js"></script>
+</body>
+</html>
