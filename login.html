@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход - Гбанк</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Гбанк</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <h2>Вход</h2>
+            <form id="login-form">
+                <label for="login-login">Логин:</label>
+                <input type="text" id="login-login" required>
+                <label for="login-password">Пароль:</label>
+                <input type="password" id="login-password" required>
+                <button type="submit">Войти</button>
+            </form>
+            <div id="login-error-message" style="color: red; margin-top: 10px;"></div>
+        </div>
+    </main>
+    <footer>
+        <p>Гбанк</p>
+        <p>Телефон: +7 (123) 456-78-90</p>
+        <p>Почта: support@gbank.ru</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
